@@ -1,0 +1,8 @@
+/*altera formatação de acordo com o tamanho da tela*/
+
+@media screen and (max-width:590px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
