@@ -1,0 +1,110 @@
+:root {
+    /*Uso de variaveis(na raiz)*/
+    --vermelho: #e50914;
+    --preta: #101414;
+}
+
+* {
+    /*RESET CSS. A page zera todas os espaços vazio(definir 1ª)*/
+    margin: 0;
+    padding: 0;
+    /*define que todos elementos dentro da caixa respeitem o tamanho da caixa*/
+    box-sizing: border-box;
+}
+
+body {
+    /*uso de variavel*/
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    /*faz com que os elementos fiquem em uma linha*/
+    display: flex;
+    /*Alinhamento Vertical*/
+    align-items: center;
+    /**Alinhamento horizontal com espaço entre os elementos*/
+    justify-content: space-between;
+}
+
+header .logo {
+    /*Cor, fonte e tamanho da logo NETFLIX*/
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a {
+    /*Tirando linda do link*/
+    text-decoration: none;
+    /*Definindo cor do link*/
+    color: #aaa;
+    margin-right: 10px;
+}
+
+
+/*hover função quando o mouse passa por cima*/
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    text-align: left;
+    /*Efeito na imagem meio apagada/ rgba=> efeito de transparencia*/
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/capa-venon.jpg');
+    height: 500px;
+    /*Define tamando da imagem de fundo*/
+    background-size: cover;
+    /*Propriedades do botao*/
+    display: flex;
+    /*Coluna*/
+    flex-direction: column;
+    /*Centralizado na coluna*/
+    justify-content: center;
+    /*Os elementos sempre começão da esquerda*/
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+
+.titulo {
+    margin-left: 5px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    /**sem borda*/
+    border: none;
+    color: seashell;
+    /*primeiro elemento do padding é top e bottom,segundo elemento é laft e right*/
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    /*transição de uma animaçãopara outra*/
+    transition: 0.5s ease all;
+}
+
+
+/*Efeito quando mouse passar pelo button*/
+
+.botao:hover {
+    background-color: white;
+    color: var(--preta);
+}
+
+.fas {
+    margin-right: 6px;
+}
