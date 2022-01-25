@@ -5,4 +5,21 @@
         display: flex;
         flex-direction: column;
     }
+    .botao {
+        margin-top: 5px;
+        width: 140px;
+        height: 60px;
+    }
+    .titulo {
+        margin-top: 60px;
+    }
+}
+
+
+/*posição da descrição do banner*/
+
+@media screen and (min-width:100px) {
+    .descricao {
+        width: 50%;
+    }
 }
